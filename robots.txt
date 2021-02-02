@@ -1,3 +1,3 @@
 User-agent: *
 Allow:/
-Sitemap: https://aiidoltest.ml/sitemap.xml
+Sitemap: https://aijobtest.ml/sitemap.xml
