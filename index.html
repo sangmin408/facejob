@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="naver-site-verification" content="eb473fd74a0d4d23da38cfbfa118ff3ff126ca2f" />
+    <meta name="title" content="AI アイドルテスト">
+    <meta name="subject" content="韓国アイドルの新メンバーで入ったら？">
+    <meta name="keywords"
+        content="AI, アイドルテスト, AI アイドルテスト, 韓国アイドル, BTS, Twice, WINNER, TVXQ, SEVENTEEN, BlackPink, SNSD, EXO, BIGBANG, ITZY, Redvelvet">
+    <meta name="author" content="AIidolTest">
+    <link rel="stylesheet" href="style.css">
+    <link rel="canonical" href="https://aiidoltest.ml" />
+    <meta property="og:url" content="https://aiidoltest.ml" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="AI アイドルテスト" />
+    <meta property="og:description" content="韓国アイドルの新メンバーで入ったら？AIが似合う韓国アイドルを探してくれます。" <script
+        data-ad-client="ca-pub-4038194586117605" async
+        src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js">
+    </script>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+        integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+
+    <title>AI 職業テスト</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-145482737-6"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Kosugi+Maru&display=swap" rel="stylesheet">
+    <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5f91754b24930713"></script>
+
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+        gtag('config', 'UA-145482737-6');
+    </script>
+    <!-- favicon -->
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light nav-distance">
+        <a class="navbar-brand" href="https://aiidoltest.ml/">face.com</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="https://ryugakusei.tistory.com/">製作者のブログ</a>
+                        <a class="dropdown-item"
+                            href="https://www.youtube.com/channel/UCQNE2JmbasNYbjGAcuBiRRg">Directed by JOcoding</a>
+                        <!-- <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Something else here</a> --> -->
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true"></a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <section class="section">
+        <h1 class="title">AI 職業テスト</h1>
+        <!-- <h5 class="subtitle2">(アップロードした写真はサーバーに残らないです。 安心してアップロードしてください。)</h5> -->
+    </section>
+    <section class="d-flex justify-content-center">
+        <p class="d-flex align-items-center pr-3">女</p>
+        <div>
+            <input type="checkbox" id="gender">
+            <label for="gender">
+                <span class="knob">
+                    <i></i>
+                </span>
+            </label>
+        </div>
+        <p class="d-flex align-items-center pl-3">男</p>
+    </section>
+    <script class="jsbin" src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+    <div class="container file-upload">
+
+        <div class="image-upload-wrap">
+            <input class="file-upload-input" type='file' onchange="readURL(this);" accept="image/*" />
+            <div class="drag-text">
+                <img src="img/upload.svg" class="mt-5 pt-5 upload">
+                <h3 class="pt-5 mb-5 pb-5 upload-text">写真を載せたらふさわしい職業を教えてくれます。</h3>
+            </div>
+        </div>
+        <div class="file-upload-content">
+            <img class="file-upload-image" id="face-image" src="#" alt="your image" />
+            <div id="loading" class="animated bounce">
+                <div class="spinner-border" role="status">
+                    <span class="sr-only">Loading...</span>
+                </div>
+                <p class="text-center">AIが分析しています。</p>
+            </div>
+            <p class="result-message"></p>
+            <div id="label-container" 　class="d-flex flex-column justify-content-around"></div>
+            <div class="addthis_inline_share_toolbox_hg73"></div>
+            <div class="modal-footer d-flex justify-content-center">
+                <button type="button p-2" class="try-again-btn" onclick="gaReload2();">
+                    <span class="try-again-text">他の写真でもう一度！</span>
+                </button>
+            </div>
+        </div>
+        <div class="noti">アップロードした写真はサーバーに残らないです。</div>
+    </div>
+
+    <script>
+        function gaReload1() {
+            gtag('event', '他の写真でもう一度 1番目', {
+                'event_category': '他の写真でもう一度！'
+            });
+        }
+        function gaReload2() {
+            gtag('event', '他の写真でもう一度！ 2番目', {
+                'event_category': '他の写真でもう一度！'
+            });
+            window.location.reload();
+        }
+    </script>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@1.3.1/dist/tf.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@teachablemachine/image@0.8/dist/teachablemachine-image.min.js"></script>
+    <script>
+        function readURL(input) {
+            if (input.files && input.files[0]) {
+
+                var reader = new FileReader();
+
+                reader.onload = function (e) {
+                    $('.image-upload-wrap').hide();
+                    $('#loading').show();
+                    $('.file-upload-image').attr('src', e.target.result);
+                    $('.file-upload-content').show();
+                    $('.image-title').html(input.files[0].name);
+                };
+
+                reader.readAsDataURL(input.files[0]);
+                init().then(() => {
+                    console.log("hello");
+                    predict();
+                    $('#loading').hide();
+                    $('#percent').show();
+                });
+
+
+            } else {
+                removeUpload();
+            }
+        }
+
+        function removeUpload() {
+            $('.file-upload-input').replaceWith($('.file-upload-input').clone());
+            $('.file-upload-content').hide();
+            $('.image-upload-wrap').show();
+        }
+        $('.image-upload-wrap').bind('dragover', function () {
+            $('.image-upload-wrap').addClass('image-dropping');
+        });
+        $('.image-upload-wrap').bind('dragleave', function () {
+            $('.image-upload-wrap').removeClass('image-dropping');
+        });
+
+    </script>
+    <script type="text/javascript">
+        let URL;
+        const urlMale = "https://teachablemachine.withgoogle.com/models/aVZp0bAvR/";
+        const urlFemale = "https://teachablemachine.withgoogle.com/models/v3mhXpyPW/";
+
+        let model, webcam, labelContainer, maxPredictions;
+
+        // Load the image model and setup the webcam
+        async function init() {
+            if (document.getElementById("gender").checked) {
+                URL = urlMale;
+            } else {
+                URL = urlFemale;
+            }
+            const modelURL = URL + "model.json";
+            const metadataURL = URL + "metadata.json";
+            model = await tmImage.load(modelURL, metadataURL);
+            maxPredictions = model.getTotalClasses();
+            labelContainer = document.getElementById("label-container");
+            for (let i = 0; i < maxPredictions; i++) { // and class labels
+                var element = document.createElement("div")
+                element.classList.add("d-flex");
+                labelContainer.appendChild(document.createElement("div"));
+            }
+        }
+
+        // run the webcam image through the image model
+        async function predict() {
+            // predict can take in an image, video or canvas html element
+            var image = document.getElementById("face-image")
+            const prediction = await model.predict(image, false);
+            prediction.sort((a, b) => parseFloat(b.probability) - parseFloat(a.probability));
+            console.log(prediction[0].className);
+            var resultMessege, resultExplain, resultCeleb;
+            if (document.getElementById("gender").checked) {
+                switch (prediction[0].className) {
+                    case "お笑い芸人男性":
+                        resultTitle = "お笑い芸人"
+                        resultExplain = "顔を見るだけで心地よくなってくれるあなた。"
+                        resultCeleb = "疲れている人たちを笑わせてくれる芸能人にふさわしいですね"
+                        break;
+                    case "教授":
+                        resultTitle = "教授"
+                        resultExplain = "読書と眼鏡がよく似合うようなあなた。 "
+                        resultCeleb = "知らないことがなさそうな教授にふさわしいですね。"
+                        break;
+                    case "アイドル男性":
+                        resultTitle = "アイドル"
+                        resultExplain = "誰でも目を奪われるような派手な顔のあなた。"
+                        resultCeleb = "歌はもちろんダンスも！できないことなんかない万能アイドルにふさわしいですね。"
+                        break;
+                    case "俳優":
+                        resultTitle = "俳優"
+                        resultExplain = "顔から出る自然な雰囲気が良いあなた。"
+                        resultCeleb = "人々を泣かせたり笑わせながら、スクリーンの上できらきら輝く俳優にふさわしいですね。"
+                        break;
+                    case "弁護士":
+                        resultTitle = "弁護士"
+                        resultExplain = "冷静で仕事において真剣そうなあなた。"
+                        resultCeleb = "非合理さに悔しがるが依頼人にだけは温かく接してくれる弁護士にふさわしいですね。"
+                        break;
+                    case "アナウンサー男性":
+                        resultTitle = "アナウンサー"
+                        resultExplain = "論理的で正確な性格のようなあなた。 "
+                        resultCeleb = "人々に正確な内容のニュースを伝えるアナウンサーにふさわしいですね。"
+                        break;
+                    case "居酒屋社長":
+                        resultTitle = "居酒屋社長"
+                        resultExplain = "穏やかな印象に愉快な性格のようなあなた。"
+                        resultCeleb = "ドラマ「深夜食堂」のように、人の悩みを聞きながら美味しいおつまみを出してくる居酒屋の社長にふさわしいですね"
+                        break;
+                    case "プログラマー":
+                        resultTitle = "プログラマー"
+                        resultExplain = "最新の電子機器をいつも持っているようなあなた。"
+                        resultCeleb = "思ったことを具現し、人々の便利さを高めるサービスを作るプログラマーにふさわしいですね。"
+                        break;
+                    default:
+                        resultTitle = "予測不可"
+                        resultExplain = ""
+                        resultCeleb = ""
+                }
+            } else {
+                switch (prediction[0].className) {
+                    case "OL":
+                        resultTitle = "OL"
+                        resultExplain = "スーツがよく似合いそうなあなた。"
+                        resultCeleb = "昼休みにスターバでコーヒーを飲むようなOLにふさわしいですね。"
+                        break;
+                    case "お笑い芸人女性":
+                        resultTitle = "お笑い芸人"
+                        resultExplain = "顔を見るだけで心地よくなってくれるあなた。"
+                        resultCeleb = "疲れている人たちを笑わせてくれる芸能人にふさわしいですね"
+                        break;
+                    case "メイド喫茶":
+                        resultTitle = "メイド"
+                        resultExplain = "かわいい顔で誰でも惚れるようなあなた。"
+                        resultCeleb = "秋葉原のメイドカフェで売上1位のエース、メイドにふさわしいですね。"
+                        break;
+                    case "バーテンダー":
+                        resultTitle = "バーテンダー"
+                        resultExplain = "穏やかな印象に愉快な性格のようなあなた。"
+                        resultCeleb = "ドラマ「深夜食堂」のように、人の悩みを聞きながら美味しいカクテルを作ってくれるバーテンダーにふさわしいですね"
+                        break;
+                    case "アナウンサー女性":
+                        resultTitle = "アナウンサー"
+                        resultExplain = "論理的で正確な性格のようなあなた。 "
+                        resultCeleb = "人々に正確な内容のニュースを伝えるアナウンサーにふさわしいですね。"
+                        break;
+                    case "アイドル女性":
+                        resultTitle = "アイドル"
+                        resultExplain = "誰でも目を奪われるような派手な顔のあなた。"
+                        resultCeleb = "歌はもちろんダンスも！できないことなんかない万能アイドルにふさわしいですね。"
+                        break;
+                    case "女優":
+                        resultTitle = "女優"
+                        resultExplain = "顔から出る自然な雰囲気が良いあなた。"
+                        resultCeleb = "人々を泣かせたり笑わせながら、スクリーンの上できらきら輝く俳優にふさわしいですね。"
+                        break;
+                    case "主婦":
+                        resultTitle = "主婦"
+                        resultExplain = "人々をリラックスさせる雰囲気のあなた。"
+                        resultCeleb = "掃除も料理も万能！ 家族のために献身的な姿が美しい主婦にふさわしいですね。"
+                        break;
+                    default:
+                        resultTitle = "予測不可"
+                        resultExplain = ""
+                        resultCeleb = ""
+                }
+            }
+            var title = "<div class='" + prediction[0].className + "-animal-title'>" + resultTitle + "</div>"
+            var explain = "<div class='animal-explain pt-2'>" + resultExplain + "</div>"
+            var celeb = "<div class='" + prediction[0].className + "-animal-celeb pt-2 pb-2'>" + resultCeleb + "</div>"
+            $('.result-message').html(title + explain + celeb);
+            var barWidth;
+            for (let i = 0; i < 3; i++) {
+                if (prediction[i].probability.toFixed(2) > 0.1) {
+                    barWidth = Math.round(prediction[i].probability.toFixed(2) * 100) + "%";
+                } else if (prediction[i].probability.toFixed(2) >= 0.01) {
+                    barWidth = "4%"
+                } else {
+                    barWidth = "2%"
+                }
+                var labelTitle;
+                switch (prediction[i].className) {
+                    case "お笑い芸人男性":
+                        labelTitle = "お笑い芸人"
+                        break;
+                    case "教授":
+                        labelTitle = "教授"
+                        break;
+                    case "アイドル男性":
+                        labelTitle = "アイドル"
+                        break;
+                    case "俳優":
+                        labelTitle = "俳優"
+                        break;
+                    case "弁護士":
+                        labelTitle = "弁護士"
+                        break;
+                    case "アナウンサー男性":
+                        labelTitle = "アナウンサー"
+                        break;
+                    case "居酒屋社長":
+                        labelTitle = "居酒屋社長"
+                        break;
+                    case "プログラマー":
+                        labelTitle = "プログラマー"
+                        break;
+                    case "OL":
+                        labelTitle = "OL"
+                        break;
+                    case "お笑い芸人女性":
+                        labelTitle = "お笑い芸人"
+                        break;
+                    case "メイド喫茶":
+                        labelTitle = "メイド"
+                        break;
+                    case "バーテンダー":
+                        labelTitle = "バーテンダー"
+                        break;
+                    case "アナウンサー女性":
+                        labelTitle = "アナウンサー"
+                        break;
+                    case "アイドル女性":
+                        labelTitle = "アイドル"
+                        break;
+                    case "女優":
+                        labelTitle = "女優"
+                        break;
+                    case "主婦":
+                        labelTitle = "主婦"
+                        break;
+                    default:
+                        labelTitle = "予測不可"
+                }
+                var label = "<div class='animal-label d-flex align-items-center'>" + labelTitle + "</div>"
+                var bar = "<div class='bar-container position-relative container'><div class='" + prediction[i].className + "-box'></div><div class='d-flex justify-content-center align-items-center " + prediction[i].className + "-bar' style='width: " + barWidth + "'><span class='d-block percent-text'>" + Math.round(prediction[i].probability.toFixed(2) * 100) + "%</span></div></div>"
+                labelContainer.childNodes[i].innerHTML = label + bar;
+            }
+        }
+    </script>
+</body>
+<!-- Copyright (c) 2020 by Aaron Vanston (https://codepen.io/aaronvanston/pen/yNYOXR)
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE. 
+
+gender toggle
+Copyright (c) 2020 by Mert Cukuren (https://codepen.io/knyttneve/pen/bPpEZY)
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+ -->
+
+</html>
